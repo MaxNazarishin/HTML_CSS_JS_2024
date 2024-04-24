@@ -1,0 +1,31 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	font-family: "ProximaNova", sans-serif;
+	font-weight: 400;
+	color: #0d1216;
+}
+
+.title {
+	text-align: center;
+	font-weight: 600;
+	font-family: "ProximaNova", sans-serif;
+}
+
+.title-1 {
+	font-size: 40px;
+}
+
+.title-2 {
+	font-size: 30px;
+}
+
+.title-3 {
+	font-size: 25px;
+}
+
+.text p {
+	line-height: 1.5625;
+}
