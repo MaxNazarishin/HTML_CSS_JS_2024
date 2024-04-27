@@ -41,7 +41,7 @@ body {
 }
 
 .section1-information2 li {
-	background-image: url("/HW_6-Les/img/Vector.png");
+	background-image: url("../img/Vector.png");
 	background-repeat: no-repeat;
 	padding-left: 47px;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .section2 {
-	background-image: url("/HW_6-Les/img/Group162774.png");
+	background-image: url("../img/Group162774.png");
 	background-repeat: no-repeat;
 	height: 530px;
 	padding-top: 130px;
@@ -101,8 +101,8 @@ body {
 
 .section3 {
 	background:
-		url("/HW_6-Les/img/flowers.png") right 400px / 170px no-repeat,
-		#f4f4f5 url("/HW_6-Les/img/leaf.png") 0 600px / 120px no-repeat;
+		url("../img/flowers.png") right 400px / 170px no-repeat,
+		#f4f4f5 url("../img/leaf.png") 0 600px / 120px no-repeat;
 	padding-top: 300px;
 	padding-left: 300px;
 
