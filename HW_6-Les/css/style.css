@@ -41,7 +41,7 @@ body {
 }
 
 .section1-information2 li {
-	background-image: url("/img/Vector.png");
+	background-image: url("/HW_6-Les/img/Vector.png");
 	background-repeat: no-repeat;
 	padding-left: 47px;
 }
@@ -59,7 +59,7 @@ body {
 }
 
 .section2 {
-	background-image: url("/img/Group162774.png");
+	background-image: url("/HW_6-Les/img/Group162774.png");
 	background-repeat: no-repeat;
 	height: 530px;
 	padding-top: 130px;
@@ -68,6 +68,7 @@ body {
 	width: 1440px;
 	margin: 0 auto;
 	margin-top: 20px;
+	margin-bottom: 40px;
 
 	font-family: "Quicksand", sans-serif;
 }
@@ -96,4 +97,62 @@ body {
 	color: black;
 	padding: 11.5px 20px;
 	border-radius: 8px;
+}
+
+.section3 {
+	background:
+		url("/HW_6-Les/img/flowers.png") right 400px / 170px no-repeat,
+		#f4f4f5 url("/HW_6-Les/img/leaf.png") 0 600px / 120px no-repeat;
+	padding-top: 300px;
+	padding-left: 300px;
+
+	color: black;
+
+	height: 847px;
+	width: 1920px;
+	margin: 0 auto;
+
+	font-family: "Roboto", sans-serif;
+	position: relative;
+}
+
+.section3-information1 {
+	font-size: 74px;
+	font-weight: 300;
+	margin-bottom: 52px;
+}
+
+.section3-information2 {
+	text-transform: capitalize;
+	font-size: 30px;
+	line-height: 55px;
+	font-weight: 400;
+	margin-bottom: 66px;
+}
+
+.section3-information3 {
+	width: 223px;
+	font-weight: 400;
+}
+
+.section3-information3 a div {
+	background-color: #1e2832;
+	color: white;
+	padding: 19px 26px;
+	font-size: 29px;
+	text-transform: capitalize;
+}
+
+.section3-photo-girl {
+	position: absolute;
+	top: 225px;
+	left: 1084px;
+
+	border-radius: 160px 0 160px 0;
+}
+
+.section3-photo-Rectangle {
+	position: absolute;
+	top: 245px;
+	left: 1104px;
 }
