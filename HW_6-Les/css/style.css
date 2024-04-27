@@ -41,7 +41,7 @@ body {
 }
 
 .section1-information2 li {
-	background-image: url("img/Vector.png");
+	background-image: url("/img/Vector.png");
 	background-repeat: no-repeat;
 	padding-left: 47px;
 }
