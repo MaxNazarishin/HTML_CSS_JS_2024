@@ -11,7 +11,7 @@ body {
 .section {
 	width: 1320px;
 	margin: 0 auto;
-	margin-top: 20px;
+	padding-top: 20px;
 }
 
 .title1 {
@@ -34,10 +34,14 @@ body {
 	margin-bottom: 10px;
 }
 
+.section1-information1 {
+	margin-bottom: 30px;
+}
+
 .title2 {
 	font-size: 18px;
 	font-weight: 700;
-	margin: 30px 0px;
+	margin-bottom: 30px;
 }
 
 .section1-information2 li {
@@ -51,7 +55,7 @@ body {
 }
 
 .title3 {
-	margin: 30px 0px;
+	margin-bottom: 30px;
 }
 
 .title {
@@ -67,7 +71,6 @@ body {
 
 	width: 1440px;
 	margin: 0 auto;
-	margin-top: 20px;
 	margin-bottom: 40px;
 
 	font-family: "Quicksand", sans-serif;
@@ -92,7 +95,7 @@ body {
 	font-weight: 700;
 }
 
-.section2-information3 a div {
+.section2-information3 a {
 	background-color: #fff;
 	color: black;
 	padding: 11.5px 20px;
@@ -135,7 +138,7 @@ body {
 	font-weight: 400;
 }
 
-.section3-information3 a div {
+.section3-information3 a {
 	background-color: #1e2832;
 	color: white;
 	padding: 19px 26px;
