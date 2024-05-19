@@ -83,8 +83,7 @@ body {
 }
 
 .catalog__item {
-	width: 300px;
-	height: 60px;
+	max-width: 300px;
 }
 
 .catalog__item:hover {
@@ -109,7 +108,7 @@ body {
 	content: "";
 	display: inline-block;
 	width: 5px;
-	height: 600px;
+	height: calc(100% - 16px);
 	background: #ffbc57;
 	vertical-align: middle;
 	position: absolute;
@@ -138,7 +137,7 @@ body {
 	right: -300px;
 	top: 0px;
 	width: 300px;
-	height: 616px;
+	height: 100%;
 	border-radius: 0 8px 8px 0;
 	padding: 8px 0;
 	font-size: 16px;
@@ -146,7 +145,6 @@ body {
 
 .header__catalog:target .catalog__item:hover .catalog__sub-catalog {
 	visibility: visible;
-	cursor: none;
 }
 
 .sub-catalog__link {
@@ -175,10 +173,6 @@ body {
 	position: relative;
 }
 
-.section-main__element img {
-	background-color: #ffffff;
-}
-
 .main {
 	width: 1290px;
 	margin: 0 auto;
@@ -198,6 +192,8 @@ body {
 	position: absolute;
 	top: 20px;
 	left: 20px;
+	width: 70%;
+	overflow: hidden;
 }
 
 .section-main__number {
@@ -210,8 +206,14 @@ body {
 .section-main__content li {
 	display: inline-block;
 	box-shadow: 30px 30px 15px rgba(0, 0, 0, 0.3);
+	background-color: #ffffff;
+	border-radius: 8px;
 }
 
 .section-main__content li:not(:last-child) {
-	margin-right: 5.5px;
+	margin-right: 0.4%;
+}
+
+.section-main__element img {
+	max-width: 100%;
 }
