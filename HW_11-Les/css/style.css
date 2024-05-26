@@ -82,7 +82,7 @@ body {
 	transform-origin: top right;
 }
 
-.perspective-block {
+.block--perspective {
 	perspective: 400px;
 }
 
@@ -102,8 +102,8 @@ body {
 	transform: rotate3d(30, 15, 15, 65deg)
 }
 
-.preserve-3d {
-	transform-style: preserve-3d;
+.block--preserve-3d {
+	transform-style: block--preserve-3d;
 }
 
 .main__box {

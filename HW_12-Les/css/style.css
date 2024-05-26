@@ -45,65 +45,65 @@ body {
 	transition: all 0.5s;
 }
 
-.translate-px:hover {
+.block:hover .translate-px {
 	transform: translate(20px, 20px);
 }
 
-.translate-procent:hover {
+.block:hover .translate-procent {
 	transform: translate(20%, 20%);
 }
 
-.scale:hover {
+.block:hover .scale {
 	transform: scale(1.2);
 }
 
-.scale-minus-value:hover {
+.block:hover .scale-minus-value {
 	transform: scale(-1, 1);
 }
 
-.rotate:hover {
+.block:hover .rotate {
 	transform: rotate(45deg);
 }
 
-.rotateX:hover {
+.block:hover .rotateX {
 	transform: rotateX(90deg);
 }
 
-.skew:hover {
+.block:hover .skew {
 	transform: skew(15deg, 15deg);
 }
 
-.matrix:hover {
+.block:hover .matrix {
 	transform: matrix(1, 2, 1, 1, 1, 1);
 }
 
-.transform-origin:hover {
+.block:hover .transform-origin {
 	transform: rotate(-90deg);
 	transform-origin: top right;
 }
 
-.perspective-block {
+.block--perspective {
 	perspective: 400px;
 }
 
-.perspective:hover {
+.block:hover .perspective {
 	transform: rotateX(65deg);
 }
 
-.translate3d:hover {
+.block:hover .translate3d {
 	transform: translate3d(20px, 20px, 100px);
 }
 
-.scale3d:hover {
+.block:hover .scale3d {
 	transform: scale3d(1.5, 1.5, 1.5);
 }
 
-.rotate3d:hover {
+.block:hover .rotate3d {
 	transform: rotate3d(30, 15, 15, 65deg)
 }
 
-.preserve-3d {
-	transform-style: preserve-3d;
+.block:hover .block--preserve-3d {
+	transform-style: block--preserve-3d;
 }
 
 .main__box {
