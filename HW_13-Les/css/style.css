@@ -529,7 +529,7 @@ input[type="text"]:focus {
 .footer {
 	text-align: center;
 	font-size: 30px;
-	padding: 10px;
-	background-color: #a15858;
+	padding: 20px 0px;
+	background-color: #4d4d4d;
 	color: #fff7f7;
 }
