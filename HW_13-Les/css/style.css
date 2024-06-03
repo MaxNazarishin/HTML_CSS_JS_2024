@@ -20,8 +20,15 @@ body {
 	margin: 0 auto;
 }
 
+.bottom-header,
+.midle-header,
+.top-header {
+	flex-wrap: wrap;
+}
+
 .header {
 	padding-bottom: 18px;
+	padding-top: 15px;
 }
 
 .header-box {
