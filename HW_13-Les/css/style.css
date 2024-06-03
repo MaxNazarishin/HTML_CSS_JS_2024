@@ -16,8 +16,9 @@ body {
 
 .header,
 .main {
-	max-width: 1290px;
+	max-width: 1320px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
 
 .bottom-header,
