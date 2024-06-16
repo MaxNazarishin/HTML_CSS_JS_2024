@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">Home Work №14</div>
+		</header>
+		<main class="main">
+			<div class="main__form">
+				<h1 class="main__h1">Оформлення замовлення</h1>
+				<form action="#" class="form">
+					<div class="form__customer-information inform-cust">
+						<div class="form-title">
+							<img class="form-title__icon-info" src="./img/icon-info.svg" alt="img">
+							<span class="form-title__text">Інформація про покупця</span>
+						</div>
+						<div class="inform-cust__input-list">
+							<input required class="inform-cust__input" placeholder="Прізвище" type="text">
+							<input required class="inform-cust__input" placeholder="Контактний телефон" type="tel">
+							<input required class="inform-cust__input" placeholder="Ім’я" type="text">
+							<input required class="inform-cust__input" placeholder="E-mail" type="email">
+							<input required class="inform-cust__input" placeholder="По батькові" type="text">
+						</div>
+						<label class="inform-cust__checkbox checkbox">
+							<input type="checkbox" class="checkbox__input">
+							<span class="checkbox__text">Отримуватиме замовлення інша людина</span>
+						</label>
+					</div>
+					<div class="form__deliveries deliveries">
+						<div class="form-title">
+							<img class="form-title__icon-info" src="./img/icon-dostavka.svg" alt="img">
+							<span class="form-title__text">Вибір способу доставки</span>
+						</div>
+						<div class="deliveries__container deliv-cont">
+							<label class="deliv-cont__element">
+								<input required type="radio" name="deliveries" class="deliv-cont__input">
+								<div class="deliv-cont__container">
+									<div class="deliv-cont__conteiner-img">
+										<div class="deliv-cont__img uncheck"><img src="./img/shop2.svg" alt="img"></div>
+										<div class="deliv-cont__img check"><img src="./img/check-circle.svg" alt="img"></div>
+									</div>
+									<span class="deliv-cont__text-1">Самовивіз із магазину</span>
+									<span class="deliv-cont__text-2">Бесплатно</span>
+								</div>
+							</label>
+							<label class="deliv-cont__element">
+								<input required type="radio" name="deliveries" class="deliv-cont__input">
+								<div class="deliv-cont__container">
+									<div class="deliv-cont__conteiner-img">
+										<div class="deliv-cont__img uncheck"><img src="./img/np.svg" alt="img"></div>
+										<div class="deliv-cont__img check"><img src="./img/check-circle.svg" alt="img"></div>
+									</div>
+									<span class="deliv-cont__text-1">Доставка Нова Пошта</span>
+									<span class="deliv-cont__text-2">≈ від 500 грн</span>
+								</div>
+							</label>
+							<label class="deliv-cont__element">
+								<input required type="radio" name="deliveries" class="deliv-cont__input">
+								<div class="deliv-cont__container">
+									<div class="deliv-cont__conteiner-img">
+										<div class="deliv-cont__img uncheck"><img src="./img/shop.svg" alt="img"></div>
+										<div class="deliv-cont__img check"><img src="./img/check-circle.svg" alt="img"></div>
+									</div>
+									<span class="deliv-cont__text-1">Доставка кур'єром</span>
+									<span class="deliv-cont__text-2">≈ від 200 грн</span>
+								</div>
+							</label>
+						</div>
+						<div class="deliveries__inform-map inform-map">
+							<div class="inform-map__container-loc-img-loc-text">
+								<div class="inform-map__location-img">
+									<img class="location-img" src="./img/location.svg" alt="img">
+								</div>
+								<div class="inform-map__location-text-container">
+									<span class="inform-map__location-text-1">Графік роботи: щодня з 9:00 до 18:00</span>
+									<span class="inform-map__location-text-2">м. Київ, пров. Ізяславський 52, пов. 2</span>
+								</div>
+							</div>
+							<div class="inform-map__location-button">
+								<a target="_blank" href="https://deepstatemap.live/#7/48.647/32.443" class="location-button">
+									<img class="location-button__img" src="./img/map.svg" alt="img">
+									<span class="location-button__text">На мапі</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="form__pay pay-form">
+						<div class="form-title">
+							<img class="form-title__icon-info" src="./img/icon-oplata.svg" alt="img">
+							<span class="form-title__text">Вибір способу оплати</span>
+						</div>
+						<div class="pay-form__label-container">
+							<label class="pay-form__element elem-pay-form">
+								<input required type="radio" name="elempay" class="elem-pay-form__input">
+								<div class="elem-pay-form__conteiner">
+									<span class="elem-pay-form__text">Готівкою при отриманні (Післясплата)</span>
+								</div>
+							</label>
+							<label class="pay-form__element elem-pay-form">
+								<input required type="radio" name="elempay" class="elem-pay-form__input">
+								<div class="elem-pay-form__conteiner">
+									<span class="elem-pay-form__text">Оплата карткою на сайті</span>
+									<img class="elem-pay-form__img" src="./img/master-card-logo.svg" alt="img">
+									<img class="elem-pay-form__img" src="./img/visa-card-logo.svg" alt="img">
+								</div>
+							</label>
+							<label class="pay-form__element elem-pay-form">
+								<input required type="radio" name="elempay" class="elem-pay-form__input">
+								<div class="elem-pay-form__conteiner">
+									<span class="elem-pay-form__text">Privat Pay</span>
+									<img class="elem-pay-form__img" src="./img/privat-pay-logo.svg" alt="img">
+								</div>
+							</label>
+							<label class="pay-form__element elem-pay-form">
+								<input required type="radio" name="elempay" class="elem-pay-form__input">
+								<div class="elem-pay-form__conteiner">
+									<span class="elem-pay-form__text">Кредит від Krovato</span>
+								</div>
+							</label>
+							<label class="pay-form__element elem-pay-form">
+								<input required type="radio" name="elempay" class="elem-pay-form__input">
+								<div class="elem-pay-form__conteiner">
+									<span class="elem-pay-form__text">Оплата частинами ПриватБанк</span>
+									<img class="elem-pay-form__img" src="./img/privaty-credit-logo.svg" alt="img">
+								</div>
+							</label>
+							<label class="pay-form__element elem-pay-form">
+								<input required type="radio" name="elempay" class="elem-pay-form__input">
+								<div class="elem-pay-form__conteiner">
+									<span class="elem-pay-form__text">Оплата частинами МоноБанк</span>
+									<img class="elem-pay-form__img" src="./img/mono-bank-logo.svg" alt="img">
+								</div>
+							</label>
+						</div>
+					</div>
+					<div class="form__commentary">
+						<div class="form-title">
+							<img class="form-title__icon-info" src="./img/icon-oplata.svg" alt="img">
+							<span class="form-title__text">Коментар до замовлення</span>
+						</div>
+						<div class="form__comment comment">
+							<textarea class="comment__textarea" placeholder="Ваш коментар" maxlength="1000"></textarea>
+						</div>
+					</div>
+					<div class="form__submit">
+						<div class="form__container container-form">
+							<button class="container-form__submit" type="submit">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+							<span class="container-form__text-1">Підтверджуючи замовлення, я приймаю умови
+								<span class="container-form__text-2"> <a href="#">Угоди користувача</a></span>
+							</span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">© KROVATO - Технології сну - 2024. Всі права захищені.</div>
+		</footer>
+	</div>
+</body>
+
+</html>
