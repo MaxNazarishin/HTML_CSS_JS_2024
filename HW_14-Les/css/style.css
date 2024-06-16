@@ -215,6 +215,7 @@ body {
 	width: 40px;
 	transition: all 0.3s;
 	position: absolute;
+	transform: scale(0);
 }
 
 .deliv-cont__img.uncheck {
@@ -223,16 +224,19 @@ body {
 	width: 40px;
 	transition: all 0.3s;
 	position: absolute;
+	transform: scale(1);
 }
 
 .deliv-cont__element:has(.deliv-cont__input:checked) .deliv-cont__img.check {
 	opacity: 1;
 	visibility: visible;
+	transform: scale(1);
 }
 
 .deliv-cont__element:has(.deliv-cont__input:checked) .deliv-cont__img.uncheck {
 	opacity: 0;
 	visibility: hidden;
+	transform: scale(0);
 }
 
 .deliv-cont__text-1 {
@@ -293,7 +297,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	transition: box-shadow 0.3s;
+	transition: box-shadow 0.2s;
 }
 
 .location-button:hover {
@@ -408,7 +412,7 @@ body {
 	width: 100%;
 	padding: 13px 0px;
 	border-radius: 8px;
-	transition: box-shadow 0.3s;
+	transition: box-shadow 0.2s;
 }
 
 .container-form__submit:hover {
