@@ -103,8 +103,9 @@ body {
 .inform-cust__input {
 	padding: 0px 20px;
 	height: 50px;
-	border: 1px solid #d1d5d5;
+	border: 2px solid #d1d5d5;
 	border-radius: 8px;
+	transition: border 0.2s;
 }
 
 .inform-cust__input::placeholder {
@@ -113,6 +114,7 @@ body {
 
 .inform-cust__input:focus {
 	outline: none;
+	border: 2px solid #ffbc57;
 }
 
 .checkbox {
@@ -150,6 +152,12 @@ body {
 	background: url("../img/checked_square.svg") center/contain no-repeat;
 }
 
+.checkbox__input:focus+.checkbox__text {
+	outline: 2px solid #ffbc57;
+	outline-offset: 4px;
+	border-radius: 8px;
+}
+
 .inform-cust__checkbox {
 	width: fit-content;
 }
@@ -181,6 +189,11 @@ body {
 	width: 0;
 	height: 0;
 	opacity: 0;
+}
+
+.deliv-cont__element:focus-within {
+	border: 3px solid #ffbc57;
+	outline: none;
 }
 
 .deliv-cont__element:has(.deliv-cont__input:checked) {
@@ -263,7 +276,7 @@ body {
 	align-items: center;
 	gap: 20px;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	background-color: #f8f8f8;
 	padding: 20px;
 	border-radius: 8px;
@@ -300,6 +313,11 @@ body {
 	transition: box-shadow 0.2s;
 }
 
+.location-button:focus {
+	outline: 2px solid #ffbc57;
+	outline-offset: 5px;
+}
+
 .location-button:hover {
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
@@ -312,6 +330,7 @@ body {
 	color: #fff;
 	font-size: 19px;
 	line-height: 1.263;
+	white-space: nowrap;
 }
 
 .inform-map__container-loc-img-loc-text {
@@ -383,6 +402,12 @@ body {
 	border-radius: 8px;
 }
 
+.pay-form__element:focus-within {
+	outline: 2px solid #ffbc57;
+	outline-offset: 5px;
+	border-radius: 8px;
+}
+
 .comment__textarea::placeholder {
 	color: #535353;
 	line-height: 30px;
@@ -400,7 +425,8 @@ body {
 }
 
 .comment__textarea:focus {
-	outline: none;
+	outline: 2px solid #ffbc57;
+	border: 1px solid #ffbc57;
 }
 
 .container-form__submit {
@@ -410,9 +436,14 @@ body {
 	line-height: 1.263;
 	background-color: #ffbc57;
 	width: 100%;
-	padding: 13px 0px;
+	padding: 13px 15px;
 	border-radius: 8px;
 	transition: box-shadow 0.2s;
+}
+
+.container-form__submit:focus {
+	outline: 2px solid #ffbc57;
+	outline-offset: 5px;
 }
 
 .container-form__submit:hover {
@@ -436,20 +467,30 @@ body {
 	color: #ffbc57;
 }
 
+.container-form__text-2 a:focus {
+	outline: 2px solid #ffbc57;
+	outline-offset: 2px;
+	border-radius: 8px;
+}
+
 .container-form__text-2 a:hover {
 	text-decoration: underline;
 }
 
 /*================*/
 
+@media screen and (max-width:600px) {
+	.main__h1 {
+		font-size: 25px;
+	}
+}
+
 @media screen and (max-width:500px) {
 	.inform-cust__input-list {
 		grid-template-columns: 1fr;
 	}
-}
 
-@media screen and (max-width:600px) {
-	.main__h1 {
-		font-size: 25px;
+	.deliveries__inform-map {
+		flex-wrap: wrap;
 	}
 }
