@@ -55,40 +55,44 @@ body {
       letter-spacing: -3px;
    }
 
-   &__burger-active {
+   &__burger-active-box {
       position: absolute;
-      top: 0;
+      top: 47px;
       right: 0;
-      width: 100vw;
-      height: 100%;
-      background-color: #161616;
-      padding: 47px 15px 15px 15px;
+      width: 300px;
+      height: 320px;
       z-index: 10;
       display: none;
-      overflow: auto;
+
+      @media screen and (max-width:449px) {
+         width: 100%;
+      }
    }
 
-   .burg-activ {
+   &__burger-active {
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      background-color: #161616;
+      opacity: 0.9;
+      overflow: auto;
+      border-radius: 10px;
+   }
+
+   &__burger-active>*:not(:last-child) {
+      margin-bottom: 10px;
+   }
+
+   @media screen and (max-width:929px) {
       &__list {
          display: flex;
          flex-direction: column;
-         gap: 10px;
       }
+   }
 
-      &__link {
-         font-size: 25px;
-         text-transform: uppercase;
-         padding: 5px;
-         border-radius: 10px;
-         transition: background-color 0.3s;
-
-         &:hover {
-            background-color: #6f00a9;
-         }
-
-         &:active {
-            background-color: #a200fa;
-         }
+   @media screen and (max-width:929px) {
+      .menu-open &__burger-active-box {
+         display: block;
       }
    }
 
@@ -97,22 +101,24 @@ body {
       position: relative;
       height: 25px;
       width: 35px;
-      z-index: 10;
+      z-index: 20;
       border-radius: 10%;
 
       transition: background-color 0.3s;
 
-      @media screen and (max-width: 930px) {
+      @media screen and (max-width: 929px) {
          display: block;
       }
 
-      &:hover {
-         cursor: pointer;
-         background-color: #2b2b2b80;
-      }
+      @media screen and (min-width: 930px) {
+         &:hover {
+            cursor: pointer;
+            background-color: #2b2b2b80;
+         }
 
-      &:active {
-         background-color: #3a3a3a;
+         &:active {
+            background-color: #3a3a3a;
+         }
       }
 
       &::after,
@@ -140,13 +146,6 @@ body {
       }
    }
 
-   .contacts-head,
-   .list-head {
-      @media screen and (max-width: 930px) {
-         display: none;
-      }
-   }
-
    &__list {
       display: flex;
       flex-wrap: wrap;
@@ -165,20 +164,36 @@ body {
    .list-head__link {
       padding: 10px;
       transition: background-color 0.3s;
-      border-radius: 10px;
 
-      &:hover {
-         background-color: #6f00a9;
+      @media screen and (min-width:929px) {
+         &:hover {
+            background-color: #6f00a9;
+         }
+
+         &:active {
+            background-color: #a200fa;
+         }
       }
 
-      &:active {
-         background-color: #a200fa;
-      }
    }
 
    &__contacts {
       display: flex;
       gap: 10px 20px;
+
+      @media screen and (max-width:449px) {
+         padding: 10px;
+
+         column-gap: 40px;
+
+         .contacts-head {
+            &__img {
+               transform: scale(1.5);
+            }
+         }
+      }
+
+
    }
 
    .contacts-head {
@@ -194,27 +209,31 @@ body {
          transition: transform 0.3s;
          border-radius: 3px;
 
-         &:hover {
-            transform: scale(1.3);
+         @media screen and (min-width:929px) {
+            &:hover {
+               transform: scale(1.3);
+            }
          }
       }
    }
 
-   .contacts-img-1 {
-      &:hover {
-         background-color: #1877f2;
+   @media screen and (min-width:929px) {
+      .contacts-img-1 {
+         &:hover {
+            background-color: #1877f2;
+         }
       }
-   }
 
-   .contacts-img-2 {
-      &:hover {
-         background-color: #0077b5;
+      .contacts-img-2 {
+         &:hover {
+            background-color: #0077b5;
+         }
       }
-   }
 
-   .contacts-img-3 {
-      &:hover {
-         background-color: #ff0000;
+      .contacts-img-3 {
+         &:hover {
+            background-color: #ff0000;
+         }
       }
    }
 }
@@ -232,37 +251,62 @@ body {
       &__container {
          @include adaptiveValue("padding-top", 120, 30, 0, 1302, 880);
          @include adaptiveValue("padding-bottom", 160, 40, 0, 1302, 880);
-
          position: relative;
       }
 
       &__hero {
          position: absolute;
-         z-index: -9;
          @include adaptiveValue("right", -70, -10, 0, 1425, 1302);
-
          bottom: -20px;
          @include adaptiveValue("width", 688, 400, 0, 1302, 880);
 
-         @media screen and (max-width: 700px) {
+         @media screen and (max-width: 750px) {
+            display: none;
+         }
+      }
+
+      &__lightning {
+         position: absolute;
+         right: 0px;
+         bottom: 0px;
+         @include adaptiveValue("width", 180, 120, 0, 750, 400);
+
+         @media screen and (min-width: 750px) {
+            display: none;
+         }
+
+         @media screen and (max-width: 370px) {
             display: none;
          }
       }
 
       &__container>*:not(:last-child) {
-         @include adaptiveValue("margin-bottom", 20, 12, 0, 1302, 700);
+         margin-bottom: 20px;
+
+         @media screen and (max-width:700px) {
+            margin-bottom: 12px;
+         }
       }
 
       &__inform-1 {
-         @include adaptiveValue("font-size", 18, 14, 0, 1302, 700);
-         font-family: "Exo", sans-serif;
+         font-size: 18px;
+
+         @media screen and (max-width: 700px) {
+            font-size: 14px;
+         }
+
+         font-family: "Exo",
+         sans-serif;
          line-height: 20px;
          letter-spacing: -1px;
          text-transform: uppercase;
-
          display: flex;
          flex-direction: column;
-         @include adaptiveValue("gap", 10, 4, 0, 1302, 700);
+         gap: 10px;
+
+         @media screen and (max-width: 700px) {
+            gap: 4px;
+         }
 
          &::after {
             content: "";
@@ -273,8 +317,7 @@ body {
       }
 
       &__inform-2 {
-         @include adaptiveValue("font-size", 80, 30, 0, 1300, 500);
-
+         @include adaptiveValue("font-size", 80, 35, 0, 1300, 500);
          font-family: "Exo", sans-serif;
          font-weight: 700;
          line-height: 0.875;
@@ -282,8 +325,14 @@ body {
       }
 
       &__inform-3 {
-         @include adaptiveValue("font-size", 18, 14, 0, 1300, 700);
-         font-family: "Exo", sans-serif;
+         font-size: 18px;
+
+         @media screen and (max-width: 700px) {
+            font-size: 14px;
+         }
+
+         font-family: "Exo",
+         sans-serif;
          line-height: 40px;
          text-transform: capitalize;
       }
@@ -299,14 +348,17 @@ body {
          @include adaptiveValue("padding-right", 60, 40, 0, 1300, 700);
          @include adaptiveValue("padding-left", 60, 40, 0, 1300, 700);
          background-color: #6f00a9;
-         transition: background-color 0.3s;
 
-         &:hover {
-            background-color: #5a008a;
-         }
+         @media screen and (min-width:929.98px) {
+            transition: background-color 0.3s;
 
-         &:active {
-            background-color: #a200fa;
+            &:hover {
+               background-color: #0b0045;
+            }
+
+            &:active {
+               background-color: #100063;
+            }
          }
       }
 
@@ -349,7 +401,7 @@ body {
          }
 
          &>:nth-child(2) {
-            margin-bottom: 60px;
+            @include adaptiveValue("margin-bottom", 60, 20, 0, 1302, 880);
          }
       }
 
@@ -462,20 +514,59 @@ body {
                @include adaptiveValue("height", 360, 200, 0, 1300, 700);
                position: relative;
 
+               @media screen and (min-width:929px) {
+                  &:hover {
+                     outline: 10px solid #9700ff;
+                     outline-offset: -10px;
+                  }
+               }
+
                &::after {
                   position: absolute;
                   content: "";
                   width: 100%;
                   height: 100%;
-                  background-color: #ffffff1a;
-                  z-index: 10;
+
+                  @media screen and (min-width:929px) {
+                     background-color: #00000059;
+                  }
+
+                  z-index: 5;
                   top: 0;
                   left: 0;
                   transition: background-color 0.3s;
                }
 
-               &:hover::after {
-                  background-color: #ffffff00;
+               @media screen and (min-width:929px) {
+                  &::before {
+                     content: "play video";
+                     position: absolute;
+                     z-index: 8;
+                     top: 70%;
+                     left: 20%;
+
+                     @media screen and (max-width:1100px) {
+                        left: 10%;
+                     }
+
+                     font-size: 40px;
+                     font-family: "Exo",
+                     sans-serif;
+                     font-weight: 700;
+                     line-height: 1;
+                     text-transform: uppercase;
+                     visibility: hidden;
+                  }
+
+                  &:hover::before {
+                     visibility: visible;
+                  }
+               }
+
+               @media screen and (min-width:929px) {
+                  &:hover::after {
+                     background-color: #ffffff00;
+                  }
                }
             }
 
@@ -493,6 +584,7 @@ body {
                top: 50%;
                left: 50%;
                transform: translate(-50%, -50%);
+               z-index: 8;
             }
 
             &__text {
